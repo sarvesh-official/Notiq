@@ -34,7 +34,7 @@
 
 ### 🤖 AI Summarization
 - Highlight or select a note and click “Summarize”
-- Uses **DeepSeek API** to generate a short summary
+- Uses **Gemini API** to generate a short summary
 - Works for long-form or bullet-style notes
 
 ### 💾 State Management

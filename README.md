@@ -1,6 +1,6 @@
-# 🧠 Notiq – Your AI-Powered Second Brain
+# 🧠 PerfectNotes – Your AI-Powered Second Brain
 
-**Notiq** is a minimalist, smart note-taking app built with **Next.js, Supabase, and DeepSeek AI**. Designed for speed and simplicity, Notiq helps users capture, organize, and summarize their thoughts — all in one intelligent workspace.
+**PerfectNotes** is a minimalist, smart note-taking app built with **Next.js, Supabase, and DeepSeek AI**. Designed for speed and simplicity, Notiq helps users capture, organize, and summarize their thoughts — all in one intelligent workspace.
 
 > Built as part of a Full Stack Intern assignment to demonstrate proficiency in modern web technologies and integration of AI into a real-world app.
 
@@ -8,8 +8,8 @@
 
 ## 🚀 Live Demo
 
-- 🔗 **Deployed App**: [https://notiq.vercel.app](https://notiq.vercel.app)  
-- 🔗 **GitHub Repo**: [https://github.com/sarvesh-official/Notiq](https://github.com/sarvesh-official/Notiq)
+- 🔗 **Deployed App**: [https://notiq.vercel.app](https://perfectnotes.vercel.app)  
+- 🔗 **GitHub Repo**: [https://github.com/sarvesh-official/Notiq](https://github.com/sarvesh-official/perfectnotes)
 
 ---
 
@@ -17,7 +17,7 @@
 
 | Frontend              | Backend               | AI & State Management        | Styling / UI        |
 |------------------------|------------------------|-------------------------------|---------------------|
-| Next.js (TypeScript)   | Supabase (Auth + DB)   | React Query, DeepSeek API     | TailwindCSS, Shadcn |
+| Next.js (TypeScript)   | Supabase (Auth + DB)   | React Query, Gemini API     | TailwindCSS, Shadcn |
 
 ---
 
@@ -55,7 +55,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/notiq
+git clone https://github.com/yourusername/perfectnotes
 cd notiq
 
 # 2. Install dependencies

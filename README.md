@@ -8,8 +8,8 @@
 
 ## 🚀 Live Demo
 
-- 🔗 **Deployed App**: [https://notiq.vercel.app](https://perfectnotes.vercel.app)  
-- 🔗 **GitHub Repo**: [https://github.com/sarvesh-official/Notiq](https://github.com/sarvesh-official/perfectnotes)
+- 🔗 **Deployed App**: [https://perfectnotes.vercel.app](https://perfectnotes.vercel.app)  
+- 🔗 **GitHub Repo**: [https://github.com/sarvesh-official/perfectnotes](https://github.com/sarvesh-official/perfectnotes)
 
 ---
 

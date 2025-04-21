@@ -9,7 +9,7 @@
 ## 🚀 Live Demo
 
 - 🔗 **Deployed App**: [https://notiq.vercel.app](https://notiq.vercel.app)  
-- 🔗 **GitHub Repo**: [https://github.com/yourusername/notiq](https://github.com/yourusername/notiq)
+- 🔗 **GitHub Repo**: [https://github.com/sarvesh-official/Notiq](https://github.com/sarvesh-official/Notiq)
 
 ---
 

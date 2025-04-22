@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { Toaster, toast } from "sonner";
 import { createSupabaseBrowser } from "@/lib/supabase/client";
 import { getNotes } from "@/lib/services/supabase-db";
@@ -36,7 +37,6 @@ export default function Dashboard() {
 
     checkUser();
 
-
     const handleResize = () => {
       if (window.innerWidth >= 768) { // md breakpoint
         setSidebarOpen(true);
@@ -45,16 +45,12 @@ export default function Dashboard() {
       }
     };
 
-
     handleResize();
-
 
     window.addEventListener('resize', handleResize);
 
-
     return () => window.removeEventListener('resize', handleResize);
   }, [router, supabase.auth]);
-
 
   useEffect(() => {
     if (selectedNote && window.innerWidth < 768) {
@@ -144,7 +140,16 @@ export default function Dashboard() {
             >
               <Menu size={20} />
             </button>
-            <h1 className="text-lg font-bold text-blue-600">Perfect Notes</h1>
+            <div className="flex items-center">
+              <Image
+                src="/images/logo.svg"
+                alt="Perfect Notes Logo"
+                width={28}
+                height={28}
+                className="mr-2"
+              />
+              <h1 className="text-lg font-bold text-blue-600">Perfect Notes</h1>
+            </div>
           </>
         )}
         <Button
@@ -157,7 +162,6 @@ export default function Dashboard() {
         </Button>
       </div>
 
-
       <div
         className={`
     ${sidebarOpen ? 'fixed inset-0 z-40 block w-full md:w-72' : 'hidden'} 
@@ -168,7 +172,16 @@ export default function Dashboard() {
       >
 
         <div className="md:hidden flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
-          <h1 className="text-xl font-bold text-blue-600">Perfect Notes</h1>
+          <div className="flex items-center">
+            <Image
+              src="/images/logo.svg"
+              alt="Perfect Notes Logo"
+              width={28}
+              height={28}
+              className="mr-2"
+            />
+            <h1 className="text-xl font-bold text-blue-600">Perfect Notes</h1>
+          </div>
           <Button
             onClick={toggleSidebar}
             variant="ghost"
@@ -179,11 +192,18 @@ export default function Dashboard() {
           </Button>
         </div>
 
-
         <div className="hidden md:flex md:items-center md:justify-between p-4 border-b border-gray-200 dark:border-gray-700">
-          <h1 className="text-xl font-bold text-blue-600">Perfect Notes</h1>
+          <div className="flex items-center">
+            <Image
+              src="/images/logo.svg"
+              alt="Perfect Notes Logo"
+              width={28}
+              height={28}
+              className="mr-2"
+            />
+            <h1 className="text-xl font-bold text-blue-600">Perfect Notes</h1>
+          </div>
         </div>
-
 
         <div className="p-4 flex justify-between items-center border-b border-gray-200 dark:border-gray-700">
           <h2 className="font-medium">My Notes</h2>
@@ -236,14 +256,12 @@ export default function Dashboard() {
         </div>
       </div>
 
-
       {sidebarOpen && (
         <div
           className="md:hidden fixed inset-0 bg-gray-600 bg-opacity-75 z-30"
           onClick={toggleSidebar}
         ></div>
       )}
-
 
       <div className="flex-1 flex flex-col overflow-hidden">
         <div className="flex-grow overflow-y-auto p-2 sm:p-4">

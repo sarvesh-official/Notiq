@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Perfect Notes",
   description: "A modern note-taking application",
+  icons: {
+    icon: "/images/favicon.svg",
+    shortcut: "/images/favicon.svg",
+    apple: "/images/logo.svg",
+  },
 };
 
 export default function RootLayout({

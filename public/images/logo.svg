@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="248" fill="#2563EB" />
+  
+  <!-- P letter -->
+  <path d="M175 150C175 141.716 181.716 135 190 135H290C332.107 135 366 168.893 366 211C366 253.107 332.107 287 290 287H220V370" 
+        fill="none"
+        stroke="white" 
+        stroke-width="60" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+</svg>

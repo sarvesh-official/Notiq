@@ -1,25 +1,12 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="512" height="512" rx="100" fill="#2563EB" />
-  
-  <!-- Notepad base -->
-  <rect x="116" y="96" width="280" height="360" rx="24" fill="white" />
-  
-  <!-- Note lines -->
-  <rect x="156" y="186" width="200" height="8" rx="4" fill="#E5E7EB" />
-  <rect x="156" y="226" width="200" height="8" rx="4" fill="#E5E7EB" />
-  <rect x="156" y="266" width="200" height="8" rx="4" fill="#E5E7EB" />
-  <rect x="156" y="306" width="200" height="8" rx="4" fill="#E5E7EB" />
-  <rect x="156" y="346" width="140" height="8" rx="4" fill="#E5E7EB" />
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="248" fill="#2563EB" />
   
   <!-- P letter -->
-  <path d="M170 136C170 126.059 178.059 118 188 118H216C234.778 118 250 133.222 250 152C250 170.778 234.778 186 216 186H190V146" stroke="#2563EB" stroke-width="24" stroke-linecap="round" />
-  
-  <!-- N letter -->
-  <path d="M262 118L262 186" stroke="#2563EB" stroke-width="24" stroke-linecap="round" />
-  <path d="M262 118L322 186" stroke="#2563EB" stroke-width="24" stroke-linecap="round" />
-  <path d="M322 118L322 186" stroke="#2563EB" stroke-width="24" stroke-linecap="round" />
-  
-  <!-- Shine effect -->
-  <circle cx="380" cy="132" r="16" fill="white" fill-opacity="0.6" />
+  <path d="M175 150C175 141.716 181.716 135 190 135H290C332.107 135 366 168.893 366 211C366 253.107 332.107 287 290 287H220V370" 
+        fill="none"
+        stroke="white" 
+        stroke-width="60" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
 </svg>

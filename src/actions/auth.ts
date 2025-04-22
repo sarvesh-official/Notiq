@@ -3,7 +3,7 @@
 import { createSupabaseServer } from "@/lib/supabase/server";
 
 export async function signup(email: string, password: string) {
-  const supabase = createSupabaseServer();
+  const supabase = await createSupabaseServer();
   
   const { data, error } = await supabase.auth.signUp({
     email,
@@ -21,7 +21,7 @@ export async function signup(email: string, password: string) {
 }
 
 export async function login(email: string, password: string) {
-  const supabase = createSupabaseServer();
+  const supabase = await createSupabaseServer();
   
   const { data, error } = await supabase.auth.signInWithPassword({
     email,
@@ -40,7 +40,7 @@ export const verifyOtp = async (data: {
 	otp: string;
 	type: string;
 }) => {
-	const supabase = createSupabaseServer();
+	const supabase = await createSupabaseServer();
 
 	const res = await supabase.auth.verifyOtp({
 		email: data.email,

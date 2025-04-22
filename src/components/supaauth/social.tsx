@@ -21,10 +21,12 @@ export function SocialSignIn({ googleOnly = false }: SocialSignInProps) {
       setIsLoading(true);
       setProvider(providerName);
       
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || window.location.origin;
+      
       const { error } = await supabase.auth.signInWithOAuth({
         provider: providerName,
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
+          redirectTo: `${baseUrl}/auth/callback`,
         },
       });
 

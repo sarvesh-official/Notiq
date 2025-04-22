@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createSupabaseBrowser } from "@/lib/supabase/client";
+import Image from "next/image";
 
 export default function Home() {
   const supabase = createSupabaseBrowser();
@@ -25,9 +26,18 @@ export default function Home() {
       <nav className="bg-white dark:bg-gray-800 shadow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
+            <Link href="/" className="cursor-pointer flex items-center">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-blue-600">Perfect Notes</span>
+               <Image
+                            src="/images/logo.svg"
+                            alt="Perfect Notes Logo"
+                            width={28}
+                            height={28}
+                            className="mr-2"
+                          />
+              <span className="text-2xl font-bold text-blue-600 hidden md:block">Perfect Notes</span>
             </div>
+            </Link>
             <div className="flex items-center">
               {isLoading ? (
                 <div className="px-4 py-2 rounded-md text-sm font-medium text-gray-400 bg-gray-100">
@@ -35,7 +45,7 @@ export default function Home() {
                 </div>
               ) : isLoggedIn ? (
                 <Link href="/dashboard" className="px-4 py-2 rounded-md text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
-                  Go to Dashboard
+                  Dashboard
                 </Link>
               ) : (
                 <Link href="/login" className="px-4 py-2 rounded-md text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
@@ -61,7 +71,7 @@ export default function Home() {
               <div className="mt-8 flex gap-4">
                 {isLoggedIn ? (
                   <Link href="/dashboard" className="px-6 py-3 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
-                    Go to Dashboard
+                    Dashboard
                   </Link>
                 ) : (
                   <Link href="/login?signup=true" className="px-6 py-3 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700">

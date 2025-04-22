@@ -1,7 +1,7 @@
-import SupaAuthVerifyEmail from "@/emails";
 import supabaseAdmin from "@/lib/supabase/admin";
 
 import { Resend } from "resend";
+import SupaAuthVerifyEmail from "../../../../emails";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {

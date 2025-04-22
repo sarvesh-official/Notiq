@@ -5,6 +5,7 @@ import { RegisterForm } from "@/components/supaauth/register";
 import { SocialSignIn } from "@/components/supaauth/social";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image";
 import { Toaster } from "sonner";
 
 export default function LoginPage() {
@@ -22,6 +23,13 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
+          <Image
+            src="/images/logo.svg"
+            alt="Perfect Notes Logo"
+            width={80}
+            height={80}
+            className="mx-auto"
+          />
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
             Welcome to Perfect Notes
           </h2>
